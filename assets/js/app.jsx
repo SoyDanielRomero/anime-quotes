@@ -1,7 +1,7 @@
 const App = () => {
   const { useState, useEffect } = React;
   const { Card, Container, Button, Form } = ReactBootstrap;
-  const [query, setQuery] = useState('naruto');
+  const [query, setQuery] = useState('Enter your favorite Anime e.g Naruto');
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState([]);
   const [url, setUrl] = useState(
@@ -36,7 +36,7 @@ const App = () => {
   return (
     <>
       <header>
-        <h1>Get the TOP 10 of your favorite anime's quotes</h1>
+        <h2>Get 10 of your favorite anime's quotes</h2>
       </header>
       <main>
         <Container>
@@ -57,10 +57,10 @@ const App = () => {
                   setQuery(event.target.value);
                   event.preventDefault();
                 }}></Form.Control>
+              <Button variant='primary' type='submit'>
+                Submit
+              </Button>
             </Form.Group>
-            <Button variant='primary' type='submit'>
-              Submit
-            </Button>
           </Form>
           {isError && <div>Something went wrong ...</div>}
 

@@ -11,7 +11,7 @@ body {
   font-family: 'Cascadia Code';
 }
 header {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
   width: 100%;
   height: auto;
@@ -21,19 +21,21 @@ header {
 main {
   padding: 0;
   margin: 0;
-  width: auto;
+  width: 100%;
   height: auto;
   display: block;
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 li {
   margin: 10px 0;
 }
 footer {
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0;
   width: 100%;
   height: 5vh;
   text-align: center;
@@ -49,4 +51,22 @@ a {
 }
 a:hover {
   color: #60f;
+}
+
+.form-control {
+  display: inline-block;
+  width: 92%;
+  margin-right: 5px;
+}
+
+.btn-primary {
+  background-color: #f36;
+  border-color: #f36;
+}
+.btn-primary:hover {
+  background-color: #60f;
+  border-color: #60f;
+}
+.blockquote-footer {
+  text-align: right;
 }
