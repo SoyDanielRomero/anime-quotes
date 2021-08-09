@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <title>Anime Quotes</title>
 
+    <!-- *BootStrap styles CDN -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -10,13 +11,14 @@
       crossorigin="anonymous"
     />
 
-    <!-- Don't use this in production: -->
+    <!-- ! Don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- *Custom Css -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
   <body>
-    <h1>Get the TOP 10 of your favorite anime's quotes</h1>
-
     <!-- We will put our React component inside this div. -->
     <div id="root"></div>
 
@@ -40,6 +42,6 @@
     ></script>
     <!-- Load our Axios and our component. -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./app.jsx" defer type="text/babel"></script>
+    <script src="./assets/js/app.jsx" defer type="text/babel"></script>
   </body>
 </html>
