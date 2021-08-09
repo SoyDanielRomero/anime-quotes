@@ -55,6 +55,7 @@ const App = () => {
                 value={query}
                 onChange={(event) => {
                   setQuery(event.target.value);
+                  event.preventDefault();
                 }}></Form.Control>
             </Form.Group>
             <Button variant='primary' type='submit'>
