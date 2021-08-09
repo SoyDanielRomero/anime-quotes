@@ -31,7 +31,7 @@ const App = () => {
       setIsLoading(false);
     };
     fetchData();
-  }, [query]);
+  }, [url]);
 
   return (
     <>
@@ -45,6 +45,7 @@ const App = () => {
               setUrl(
                 `https://animechan.vercel.app/api/quotes/anime?title=${query}`
               );
+              console.log(url);
               event.preventDefault();
             }}>
             <Form.Group>
