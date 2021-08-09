@@ -33,8 +33,20 @@ li {
 }
 footer {
   padding: 10px;
-  margin: 0;
+  margin: 10px;
   width: 100%;
   height: 5vh;
   text-align: center;
+}
+img {
+  width: 32px;
+}
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: #f36;
+  text-decoration-style: none !important;
+  text-decoration-thickness: unset !important;
+}
+a:hover {
+  color: #60f;
 }
