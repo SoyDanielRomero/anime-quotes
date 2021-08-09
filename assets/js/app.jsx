@@ -84,7 +84,15 @@ const App = () => {
           )}
         </Container>
       </main>
-      <footer>Made with ❤️ by Daniel Romero</footer>
+      <footer>
+        Made with ❤️ by{' '}
+        <a href='https://soydanielromero.github.io'>
+          <img src='../../../img/favicon.png' alt='Logo Daniel Romero'></img>
+        </a>{' '}
+        <a href='https://soydanielromero.github.io'>
+          Daniel <strong>Romero</strong>
+        </a>
+      </footer>
     </>
   );
 };
