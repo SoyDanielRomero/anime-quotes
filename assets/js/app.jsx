@@ -1,7 +1,7 @@
 const App = () => {
   const { useState, useEffect } = React;
   const { Card, Container, Button, Form } = ReactBootstrap;
-  const [query, setQuery] = useState('Enter your favorite Anime e.g Naruto');
+  const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState([]);
   const [url, setUrl] = useState(
@@ -51,7 +51,7 @@ const App = () => {
             <Form.Group>
               <Form.Control
                 type='text'
-                placeholder='Enter your favorite Anime'
+                placeholder="Favorite Anime's name, e.g., Naruto"
                 value={query}
                 onChange={(event) => {
                   setQuery(event.target.value);
