@@ -25,6 +25,7 @@ const App = () => {
       try {
         const result = await axios(getConfig);
         setData(result.data);
+        setIsError(false);
       } catch (error) {
         setIsError(true);
       }
@@ -62,9 +63,12 @@ const App = () => {
               </Button>
             </Form.Group>
           </Form>
-          {isError && <div>Something went wrong ...</div>}
-
-          {isLoading ? (
+          {isError ? (
+            <div className='error-msg'>
+              The Anime you are looking for maybe is not in our database, or it
+              has a different name, please search again …
+            </div>
+          ) : isLoading ? (
             <div>Loading quotes...</div>
           ) : (
             <ul>
